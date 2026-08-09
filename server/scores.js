@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Score = require('../models/Score');
+const Score = require('../server/Score');
 
 // GET /api/scores - top 10 high scores
 router.get('/', async (req, res) => {
