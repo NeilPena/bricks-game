@@ -103,3 +103,44 @@ canvas {
   font-size: 13px;
   text-align: center;
 }
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.high-scores {
+  width: 100%;
+  max-width: 320px;
+}
+
+@media (max-width: 520px) {
+  .game-wrapper {
+    padding: 0 8px;
+    width: 100%;
+  }
+
+  .overlay {
+    width: 100%;
+  }
+
+  .hud {
+    gap: 16px;
+    font-size: 15px;
+  }
+
+  .controls {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
+  .overlay-panel h2 {
+    font-size: 22px;
+  }
+
+  .overlay-panel input {
+    width: 80%;
+    max-width: 220px;
+  }
+}

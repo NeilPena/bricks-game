@@ -143,7 +143,8 @@ export default function Game() {
 
     const movePaddleTo = (clientX) => {
       const rect = canvas.getBoundingClientRect();
-      const relativeX = clientX - rect.left;
+	  const scale = CANVAS_WIDTH / rect.width;
+      const relativeX = (clientX - rect.left) * scale;
       const s = stateRef.current;
       let x = relativeX - PADDLE_WIDTH / 2;
       x = Math.max(0, Math.min(CANVAS_WIDTH - PADDLE_WIDTH, x));
