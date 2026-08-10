@@ -15,7 +15,7 @@ const BRICK_OFFSET_TOP = 45;
 const BRICK_OFFSET_LEFT = 12;
 const ROW_COLORS = ['#ff4d4d', '#ff9f4d', '#ffe14d', '#8bff4d', '#4dd2ff'];
 const LIVES_START = 3;
-const API_BASE = '/routes/scores';
+const API_BASE = '/api/scores';
 
 function buildBricks() {
   const bricks = [];
