@@ -304,7 +304,7 @@ export default function Game() {
           <div className="overlay-panel">
             {status === 'idle' && (
               <>
-                <h2>Brickingout</h2>
+                <h2>Brickout</h2>
                 <p>Move the paddle to keep the ball from passing the bottom.<br />Clear every block to win the round.</p>
                 <button onClick={startGame}>Start Game</button>
               </>
