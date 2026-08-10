@@ -314,7 +314,7 @@ export default function Game() {
               <>
                 <h2>Game Over</h2>
                 <p>Final Score: {score}</p>
-                {!submitted ? (
+                {!submitted && (
                   <>
                     <input
                       type="text"
@@ -325,11 +325,11 @@ export default function Game() {
                     />
                     <button onClick={submitScore}>Save Score</button>
                   </>
-                ) : (
-                  <button onClick={startGame}>Play Again</button>
-                )}
-              </>
-            )}
+               )}
+				{submitted && <p style={{ color: '#8bff4d' }}>Score saved!</p>}
+				<button onClick={startGame}>Play Again</button>
+				</>
+			)}
 
             {status === 'win' && (
               <>
