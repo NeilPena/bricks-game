@@ -218,7 +218,7 @@ export default function Game() {
       ctx.fill();
       ctx.closePath();
 
-      if (!s.running) return;
+      if (s.running){
 
       // Move ball
       s.ballX += s.ballDX;
@@ -281,6 +281,7 @@ export default function Game() {
         endGame(true);
       }
 
+	}
       rafRef.current = requestAnimationFrame(draw);
     };
 
